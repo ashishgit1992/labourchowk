@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
     tools:context=".MainActivity">
 
     <CheckBox
@@ -25,6 +27,7 @@
         android:hint="Remember me"
         android:text="login"
         android:textColorHint="@color/colorAccent"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
@@ -36,6 +39,7 @@
         android:layout_marginLeft="152dp"
         android:layout_marginTop="36dp"
         android:text="Signup"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/checkBox"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
@@ -43,20 +47,23 @@
         android:id="@+id/editTextTextPersonName6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
         android:layout_marginTop="36dp"
+        android:background="#4E7EDF"
         android:ems="10"
+        android:hapticFeedbackEnabled="false"
         android:hint="Enter Your User Name"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/TopText"
-        app:layout_constraintTop_toBottomOf="@+id/TopText" />
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
         android:id="@+id/editTextTextPassword2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
+        android:background="#4282CD"
         android:ems="10"
         android:hint="Enter Your Password"
         android:inputType="textPassword"
@@ -67,24 +74,32 @@
         android:id="@+id/TopText"
         android:layout_width="326dp"
         android:layout_height="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="56dp"
+        android:background="#95C0F4"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
         android:text="Welcome To Labour Chowk"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="352dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="404dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="36dp"
+        android:background="#FBBC8C"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopText"
         app:srcCompat="@drawable/logo" />
 
     <Button
@@ -92,7 +107,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:onClick="onclick"
         android:text="Skip"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.997"
         app:layout_constraintStart_toStartOf="parent"
