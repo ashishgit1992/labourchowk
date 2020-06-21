@@ -5,9 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#D3D3D3"
+    android:background="#ffff"
     android:weightSum="10"
     tools:context=".HomeActivity">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search for Services" />
 
     <RelativeLayout
         android:layout_weight="2"
@@ -23,11 +30,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <SearchView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFF"
+            android:gravity="center"
+            android:textColor="#7D30A6"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Services available in your area">
+
+        </TextView>
+    </LinearLayout>
 
     <GridLayout
         android:id="@+id/mainGrid"
