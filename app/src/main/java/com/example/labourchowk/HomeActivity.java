@@ -1,27 +1,20 @@
 package com.example.labourchowk;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import androidx.appcompat.app.AppCompatActivity;
+
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
 
 public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home3);
+        setContentView(R.layout.activity_home);
     }
-
-    public void plum(View view) throws ClassNotFoundException {
-        String v="com.example.labourchowk"+String.valueOf(view.getId())+"Activity";
-        System.out.println(v);
-        Class<?> c=Class.forName(v);
-       // Intent intent=new Intent(this,PlumberActivity.class);
-        Intent intent=new Intent(this,c);
-        startActivity(intent);
-
-    }
-
 
 }
